@@ -1,0 +1,27 @@
+:host {
+  display: contents;
+}
+
+ion-accordion::part(content) {
+  background-color: #202225;
+}
+
+ion-accordion::part(header) {
+  background-color: #202225;
+}
+
+ion-accordion ion-item[slot=header] {
+  --background: #2F3136;
+  --color: #fff;
+}
+
+
+ion-accordion [slot=content],
+ion-accordion ion-item [slot=content] {
+  --ion-item-background: #393C42;
+}
+
+.channel-title {
+  color: #5A5D61;
+  font-weight: bolder;
+}

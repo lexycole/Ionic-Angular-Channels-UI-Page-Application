@@ -1,0 +1,23 @@
+<ion-item>
+  <ion-label>
+    <ion-toolbar color="#393C42">
+      <ion-buttons slot="secondary">
+        <ion-button>
+          <ion-badge slot="start" *ngIf="count != NEW_MESSAGE_COUNT.COUNT">22 new</ion-badge>
+        </ion-button>
+        <ion-button (click)="presentActionSheet()" class="detail-btn">
+          <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-thumbnail *ngIf=" indicatorConfig.type === 'image' " slot="start">
+        <ion-img [src]="channelItem.thumbnail?.url || indicatorConfig.default?.url"></ion-img>
+      </ion-thumbnail>
+      <ion-icon *ngIf=" indicatorConfig.type === 'ion-icon' " slot="start"
+        [name]="channelItem.ionIcon?.name || indicatorConfig.default?.name"></ion-icon>
+      <ion-title>{{channelItem.title}}</ion-title>
+      <ion-title size="small">
+        {{channelItem.description}}
+      </ion-title>
+    </ion-toolbar>
+  </ion-label>
+</ion-item>

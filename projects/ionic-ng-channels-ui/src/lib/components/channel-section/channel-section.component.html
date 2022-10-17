@@ -1,0 +1,14 @@
+<ng-template #template>
+  <ion-item slot="header">
+    <ion-label class="ion-padding-top ion-no-margin ion-text-uppercase">
+      <span class="channel-title">General</span>
+      <ion-button class="ion-float-right" color="light" shape="round">
+        <ion-icon name="add-outline"></ion-icon>
+      </ion-button>
+    </ion-label>
+  </ion-item>
+  <ion-list slot="content">
+    <channels-ui-channel-list [channelItems]="channelSection.items" [indicatorConfig]="indicatorConfig"
+      remove-component-wrap-tag [actionSheetFunction]="actionSheetFunction"></channels-ui-channel-list>
+  </ion-list>
+</ng-template>

@@ -1,0 +1,35 @@
+  <ion-header *ngIf="kind == CHANNEL_EDITOR_PAGE_KIND.SECTION">
+    <ion-toolbar >
+      <ion-title *ngIf="showTitle">{{pageTitle}}</ion-title>
+      <ion-buttons slot="end">
+        <ion-button class="todos-ui-dismiss-btn" (click)="close()">
+          <ion-icon slot="icon-only" name="close-outline" ></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+  
+    <form [formGroup]="todoForm">
+      <ion-list>
+        <ion-item>
+          <ion-input #title placeholder="Enter Todo Title" class="form-control ion-text-center todos-ui-input"
+          formControlName="title" type="text" maxlength="15">
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input #description placeholder="Enter Todo Description" class="form-control ion-text-center todos-ui-input"
+          formControlName="description" type="text" maxlength="150">
+          </ion-input>
+        </ion-item>
+        <div *ngIf="todoForm.controls?.['title']?.touched && todoForm.controls?.['title']?.invalid" style="color: red; padding-left: 5px;">
+        <p *ngIf="todoForm.controls?.['title']?.errors?.['required']">{{validationMsg1}}</p>
+      </div>
+      <div *ngIf="todoForm.controls?.['description']?.touched && todoForm.controls?.['description']?.invalid" style="color: red; padding-left: 5px;">
+        <p *ngIf="todoForm.controls?.['description']?.errors?.['required']">{{validationMsg2}}</p>
+      </div>
+          <ion-button color="primary"  expand="full"  size="default">Save</ion-button>
+      </ion-list>
+    </form>
+  </ion-content>

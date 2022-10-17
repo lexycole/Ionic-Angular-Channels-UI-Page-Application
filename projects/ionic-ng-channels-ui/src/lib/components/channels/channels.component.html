@@ -1,0 +1,6 @@
+<ion-accordion-group>
+  <ion-accordion *ngFor="let channelSection of channelSections" value="colors" toggleIconSlot="start">
+    <channels-ui-channel-section remove-component-wrap-tag [channelSection]="channelSection"
+      [indicatorConfig]="indicatorConfig" [actionSheetFunction]="actionSheetFunction"></channels-ui-channel-section>
+  </ion-accordion>
+</ion-accordion-group>

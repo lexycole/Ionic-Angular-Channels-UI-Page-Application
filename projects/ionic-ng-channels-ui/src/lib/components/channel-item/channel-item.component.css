@@ -1,0 +1,26 @@
+.ion-padding-end {
+  padding-left: 1px;
+  padding-top: 1px;
+}
+
+ion-toolbar [slot="secondary"],
+ion-toolbar ion-title,
+ion-toolbar ion-thumbnail {
+  --color: #000;
+}
+
+h1 {
+  font-size: 21px;
+}
+
+p {
+  font-size: 16px;
+}
+
+span {
+  font-size: 14px;
+}
+
+.detail-btn {
+  color: #000;
+}
