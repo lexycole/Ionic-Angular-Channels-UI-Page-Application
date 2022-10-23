@@ -1,10 +1,15 @@
 # 💒Ionic Ng Channels UI Workspace
 
+## Result
+![Screenshot (2630)](https://user-images.githubusercontent.com/40228505/197374268-4bf31ef4-c095-4f92-8b12-8f56356d9fbe.png)
+
+## Channels Action Sheet
+![Screenshot (2495)](https://user-images.githubusercontent.com/40228505/197374562-984f0488-042e-4991-a2d7-51b14aa924e1.png)
+
+## Channels Popover Options
+![Screenshot (2492)](https://user-images.githubusercontent.com/40228505/197374625-30657667-5b5f-44d7-9122-ec50f616b58d.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
-
-## 🚀Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
@@ -14,14 +19,9 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+### ng build output
+![Screenshot (2247)](https://user-images.githubusercontent.com/40228505/197374818-2eab956e-6bb5-4c77-adee-c7d208735147.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Link ionic library
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+npm link
