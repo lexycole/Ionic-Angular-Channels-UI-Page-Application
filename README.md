@@ -29,17 +29,20 @@ _npm link_
 
 
 ## Some Error I encountered and How I solved them
-SOLUTION:
+#####SOLUTION:
 * Refactor AfterViewInit lifecycle hook
 * Use ChangeDetectorRef mannually
 * Make getters idempotent
 * Make the update async (last resort)
-image![Screenshot (2291)](https://user-images.githubusercontent.com/40228505/197375296-ef86e8d6-7b32-45e0-8e2b-79b1585c09b1.png)
+![Screenshot (2291)](https://user-images.githubusercontent.com/40228505/197375296-ef86e8d6-7b32-45e0-8e2b-79b1585c09b1.png)
 
 
-
+### Error one
 ![Screenshot (2516)](https://user-images.githubusercontent.com/40228505/197375108-ed77c2a7-b15d-4f64-9470-bcb3e26bd64f.png)
-![Screenshot (2469)](https://user-images.githubusercontent.com/40228505/197375166-afdb4e6c-c8cb-4f10-93d5-3915e208b3f0.png)
-![Screenshot (2467)](https://user-images.githubusercontent.com/40228505/197375179-c3fb6f56-fde5-4a5d-ab6e-a6597542e363.png)
 
+###Error two
+![Screenshot (2469)](https://user-images.githubusercontent.com/40228505/197375166-afdb4e6c-c8cb-4f10-93d5-3915e208b3f0.png)
+
+###Error three
+![Screenshot (2467)](https://user-images.githubusercontent.com/40228505/197375179-c3fb6f56-fde5-4a5d-ab6e-a6597542e363.png)
 
